@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtWifiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设备名称设置"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        
+        android:id="@+id/et_wifiTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:layout_marginBottom="30dip"
+        android:hint="如：大厅控制模块"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="15dip" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="IO控制个数"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <NumberPicker
+                android:id="@+id/io_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:id="@+id/btn_editIo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑项" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="15dip" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="PWM个数"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <NumberPicker
+                android:id="@+id/pwm_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:id="@+id/btn_editPwm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑项" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="15dip" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="传感器个数"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <NumberPicker
+                android:id="@+id/analog_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:id="@+id/btn_editAnalog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑项" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="7dip"
+            android:layout_marginTop="30dip"
+            android:onClick="btn_ok"
+            android:text="确定" />
+
+    </LinearLayout>
+
+</LinearLayout>
